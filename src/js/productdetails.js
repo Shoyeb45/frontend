@@ -56,10 +56,10 @@ function updateProductPage(product) {
         document.getElementById("stock").style.color = "red";
     }
 
-    for (let i = 0; i < 3; i++) {
-        document.getElementById("img-" + i).setAttribute("src", product.productImage[i]);
-        document.getElementById("img-t-" + i).setAttribute("src", product.productImage[i]);
-    }
+    // for (let i = 0; i < 3; i++) {
+    //     document.getElementById("img-" + i).setAttribute("src", product.productImage[i]);
+    //     // document.getElementById("img-t-" + i).setAttribute("src", product.productImage[i]);
+    // }
 }
 
 // Call the fetch function when the page loads
