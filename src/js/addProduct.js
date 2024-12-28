@@ -5,7 +5,7 @@ document.getElementById("addProductForm").addEventListener("submit", async (e) =
     const formData = new FormData(form);
 
     try {
-        const response = await fetch("http://localhost:4000/api/v1/product/addProduct", {
+        const response = await fetch("http://backend-jewelix.up.railway.app/api/v1/product/addProduct", {
             method: "POST",
             body: formData,
         });
