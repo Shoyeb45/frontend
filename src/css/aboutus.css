@@ -1,0 +1,110 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f5dcb1;
+    color: #684900;
+}
+
+/* Section Styles */
+.about-us {
+    background-color: #faeacc;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #1d1d1d;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+   
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+    max-width: 100%;
+    margin-left: 20px;
+    text-align: left;
+    align-items: center;
+   margin-top: 40px;
+}
+
+.text p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #6a4a01;
+   
+
+}
+
+.values {
+    margin-top: 40px;
+    text-align: left;
+    max-width: 800px;
+    margin: 40px auto;
+  
+   
+    text-align: center;
+}
+
+.values h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1d1d1d;
+    margin-bottom: 20px;
+}
+
+.values ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.values ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.values ul li strong {
+    color: #d84b16;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
