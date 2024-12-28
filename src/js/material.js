@@ -17,7 +17,7 @@ function openMaterialWindow(material) {
 
 async function getProductData(material, newWindow) {
     try {
-        const response = await fetch(`http://backend-jewelix.up.railway.app/api/v1/product/getProductOfMaterial?typeOfMaterial=${material}`);
+        const response = await fetch(`https://backend-jewelix.up.railway.app/api/v1/product/getProductOfMaterial?typeOfMaterial=${material}`);
         const productData = await response.json();
         
         if (productData && productData.length > 0) {

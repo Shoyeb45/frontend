@@ -11,7 +11,7 @@ document.getElementById("form-data").addEventListener("submit", async (event) =>
     };
 
     try {
-        const response = await fetch("http://backend-jewelix.up.railway.app/api/v1/user/register", {
+        const response = await fetch("https://backend-jewelix.up.railway.app/api/v1/user/register", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
