@@ -45,7 +45,6 @@ async function fetchProductDetails() {
 function updateProductPage(product) {
 
     document.getElementById('name-of-product').innerHTML = product.productName;
-    console.log(document.getElementById('name-of-product'));
     
     document.getElementById('price').innerHTML = `₹${product.price}`;
     document.getElementById('description').innerHTML = product.description;
@@ -53,7 +52,7 @@ function updateProductPage(product) {
 
     document.getElementById("big-img").setAttribute("src", product.productImage[0]);
     if (product.quantity === 0) {
-        document.getøElementById("stock").innerHTML = "<strike>Out Of Stock</strike>";
+        document.getElementById("stock").innerHTML = "<strike>Out Of Stock</strike>";
         document.getElementById("stock").style.color = "red";
     }
 
