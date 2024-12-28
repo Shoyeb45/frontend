@@ -27,7 +27,9 @@ h1 {
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+.heading {
+    color: #4d3c0d;
+}
 .product:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);

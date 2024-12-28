@@ -7,6 +7,7 @@ function openMaterialWindow(material) {
                 <link rel="stylesheet" type="text/css" href="./src/css/category.css">
             </head>
             <body>
+                <h2 align="center" class="heading">${material}</h2>
                 <div id="product-container"></div>
             </body>
         </html>
