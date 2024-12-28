@@ -1,0 +1,19 @@
+#inner-div-nav {
+    margin-left: 2vw;
+    margin-top: -3vh;
+    border-bottom: 1px solid #96681eeb;
+    margin-right: 2vw;
+}
+
+#product-title {
+    display: inline;  
+    color: #4f3402;  
+}
+#quantity {
+    color: #96681eeb;
+}
+#product-title-container {
+    margin-left: 2.7vw;
+    margin-top: 3vh;
+}
+
