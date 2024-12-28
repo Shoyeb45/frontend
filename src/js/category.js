@@ -1,4 +1,4 @@
-function openMaterialWindow(material) {
+function openCategoryWindow(material) {
     const newWindow = window.open('', '_blank');
     const htmlContent = `
         <html>
@@ -16,10 +16,10 @@ function openMaterialWindow(material) {
 
     console.log(document.getElementsByTagName("link"));
     
-    getProductData(material, newWindow);
+    getProductDataCategory(material, newWindow);
 }
 
-async function getProductData(material, newWindow) {
+async function getProductDataCategory(material, newWindow) {
     try {
         const response = await fetch(`https://backend-jewelix.up.railway.app/api/v1/product/getProductOfCategory?category=${material}`);
         const productData = await response.json();
@@ -73,7 +73,7 @@ function displayProducts(products, newWindow) {
 document.querySelectorAll('.elem-category').forEach(button => {
     button.addEventListener('click', (event) => {
         const selectedMaterial = event.target.getAttribute('data-material');
-        openMaterialWindow(selectedMaterial);
+        openCategoryWindow(selectedMaterial);
     });
 });
 
