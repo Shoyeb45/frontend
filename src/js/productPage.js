@@ -31,7 +31,7 @@ fetchProductDetails();
 
 function updateProductPage(products, productType) {
     
-    document.getElementsByTagName("title").innerHTML = `${productType}: Buy ${productType} Jewellery`
+    document.querySelector("title").innerHTML = `${productType}: Buy ${productType} Jewellery`
     document.getElementById("current").innerHTML = `${productType}`
     document.getElementById("product-title").innerHTML = `${productType}`
     document.getElementById("quantity").innerHTML = `(${products.length} results)`
