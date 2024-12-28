@@ -38,23 +38,28 @@ async function fetchProductDetails() {
         }
     } catch (err) {
         console.error('Error fetching product data:', err);
-        document.getElementById('product-details-container').innerHTML = 'Error fetching data.';
+        document.getElementById('product-details').innerHTML = 'Error fetching data.';
     }
 }
 
 function updateProductPage(product) {
 
     document.getElementById('name-of-product').innerHTML = product.productName;
+    console.log(document.getElementById('name-of-product'));
+    
     document.getElementById('price').innerHTML = `₹${product.price}`;
     document.getElementById('description').innerHTML = product.description;
     document.getElementById("category").innerHTML = product.category;
 
     document.getElementById("big-img").setAttribute("src", product.productImage[0]);
     if (product.quantity === 0) {
-        document.getElementById("stock").innerHTML = "<strike>Out Of Stock</strike>";
+        document.getøElementById("stock").innerHTML = "<strike>Out Of Stock</strike>";
         document.getElementById("stock").style.color = "red";
     }
 
+    for (let i = 0; i < 3; i++) {
+
+    }
 }
 
 // Call the fetch function when the page loads
