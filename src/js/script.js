@@ -4,7 +4,7 @@ async function checkLoginStatus() {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': `Bearer ${accessToken}`
+                // 'Authorization': `Bearer ${accessToken}`
             },
             credentials: 'include'
         });
