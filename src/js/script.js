@@ -1,7 +1,7 @@
 async function checkLoginStatus() {
     try {
         const response = await fetch('https://jewlix.up.railway.app/api/auth/isLoggedIn', {
-            method: 'GET',
+            method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
