@@ -17,3 +17,7 @@
     margin-top: 3vh;
 }
 
+h2 a {
+    text-decoration: none;
+    color: #4f3402;
+}
