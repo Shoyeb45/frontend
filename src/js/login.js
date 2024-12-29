@@ -9,7 +9,7 @@ document.getElementById('loginForm').addEventListener('submit', async (event) =>
 
 
     try {
-        const response = await fetch('https://backend-jewelix.up.railway.app/api/v1/user/login', {
+        const response = await fetch('https://jewlix.up.railway.app/api/v1/user/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

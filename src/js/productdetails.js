@@ -28,7 +28,7 @@ async function fetchProductDetails() {
     }
 
     try {
-        const response = await fetch(`https://backend-jewelix.up.railway.app/api/v1/product/${productId}`);
+        const response = await fetch(`https://jewlix.up.railway.app/api/v1/product/${productId}`);
         const productData = await response.json();
 
         if (productData) {
@@ -46,7 +46,7 @@ function updateProductPage(product) {
 
     document.querySelector("title").innerHTML = `${product.productName}`
     document.getElementById("current").innerHTML = `${product.productName}`
-    
+
     document.getElementById('name-of-product').innerHTML = product.productName;
     
     document.getElementById('price').innerHTML = `₹${product.price}`;
