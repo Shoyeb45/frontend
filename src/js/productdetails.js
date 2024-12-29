@@ -44,6 +44,9 @@ async function fetchProductDetails() {
 
 function updateProductPage(product) {
 
+    document.querySelector("title").innerHTML = `${product.productName}`
+    document.getElementById("current").innerHTML = `${product.productName}`
+    
     document.getElementById('name-of-product').innerHTML = product.productName;
     
     document.getElementById('price').innerHTML = `₹${product.price}`;
