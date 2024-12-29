@@ -1,8 +1,10 @@
 #inner-div-nav {
     margin-left: 2vw;
     margin-top: -3vh;
-    border-bottom: 1px solid #96681eeb;
+    border-top: 1px solid #96681eeb;
     margin-right: 2vw;
+    padding-top: 1.2em;
+    padding-left: 1.2em;
 }
 
 #product-title {
