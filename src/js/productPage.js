@@ -12,7 +12,7 @@ async function fetchProductDetails() {
     }
 
     try {
-        const response = await fetch(`http://localhost:4000/api/v1/product/${param1}?${param2}=${urlParams.get(param2)}`);
+        const response = await fetch(`https://backend-jewelix.up.railway.app/api/v1/product/${param1}?${param2}=${urlParams.get(param2)}`);
         const productData = await response.json();
         console.log(productData);
 
