@@ -21,7 +21,7 @@ async function checkLoginStatus() {
     }
 }
 
-window.onload = checkLoginStatus;
+checkLoginStatus();
 
 let slideIndexes = {
     "material-slideshow": 1,
