@@ -2,7 +2,11 @@ async function checkLoginStatus() {
     try {
         const response = await fetch('https://backend-jewelix.up.railway.app/api/auth/isLoggedIn', {
             method: 'GET',
-            credentials: 'include' // Include cookies for cross-origin requests
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${accessToken}`
+            },
+            credentials: 'include'
         });
 
         const data = await response.json();
