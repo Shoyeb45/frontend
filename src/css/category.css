@@ -55,13 +55,6 @@ h1 {
     color: rgb(34, 20, 4);
 }
 
-/* Product images container */
-.product-images {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 10px;
-}
 
 .product-img {
     width: 280px;

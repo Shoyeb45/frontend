@@ -50,7 +50,7 @@ function updateProductPage(products, productType) {
 
             <div class="card">
                 <div class="card-header">    
-                    <img src='${product.productImage[0]}' class="product-img">
+                    <a href="../static/product-details.html?productId=${product._id}" target="_blank"><img src='${product.productImage[0]}' class="product-img"></a>
                 </div>
                 <div class="card-body">    
                     <p class="price">₹${product.price} <strike>₹${product.price + 1000}</strike></p>
